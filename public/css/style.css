@@ -1,0 +1,60 @@
+html, body 
+{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color:lightgray;
+    font-size: 100%;
+    font-family: Gill Sans, sans-serif;
+    overflow: hidden;
+    background-image: url("https://st3.depositphotos.com/12439124/19316/i/450/depositphotos_193164438-stock-photo-close-detail-white-bronze-silver.jpg?forcejpeg=true");
+    background-size: contain;
+
+}
+
+.fridge {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
+
+.magnet {
+    position: absolute;
+    cursor: pointer;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    color: white;
+    filter: drop-shadow(5px 2px 7px rgb(73, 73, 73));
+    font-weight: 600;
+    border: solid 2px white;
+    background-color: white;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    animation: 3s bgrandom infinite;
+    border-radius: 10%;
+
+}
+
+.magnet:hover {
+    background-color: white !important;
+}
+
+.magnet:target {
+    background-color: white !important;
+}
+
+@keyframes bgrandom {
+    0% { background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); }
+    50% { background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); }
+
+    55% { background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);}
+    80% { background:linear-gradient(98deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); }
+
+    85% { background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,124,1) 0%, rgba(0,212,255,1) 100%); }
+    100% { background: linear-gradient(#e66465, #9198e5); }
+    }
